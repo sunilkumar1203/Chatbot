@@ -1,0 +1,143 @@
+.navbar {
+    background-color: #2E3B4E; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: center;
+}
+
+.navbar-title {
+    color: #E1C6E0; 
+    padding-left: 5px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+/* @media screen and (max-width: 1024px) {
+    .navbar-title {
+        color: #E1C6E0; 
+        text-align: center;
+        margin-left: 0;
+    }
+    .chatBotImg {
+        display: none;
+    }
+  } */
+
+.chatBotImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+  
+    
+}
+
+.message-box {
+    background-color: #D1E7DD;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 320px;
+    margin: 16px;
+}
+
+.message {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #2E3B4E;
+}
+
+.user-message-box {
+    
+    background-color: #E8F1F5;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 320px;
+    margin: 16px;
+    align-self: flex-end;
+    position: relative;
+}
+
+.user-message {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #1B2A49;
+}
+.buttonDelete{
+   position: absolute;
+   size: 7em;
+   border: none;
+   margin-left: 20em;
+}
+.deleteIcon{
+    
+    background-color: transparent;
+    color: #00072d;
+    cursor: pointer;
+   
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.input {
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0.7rem;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 3px;
+    border: solid 3px transparent;
+    border-bottom: dashed 3px #fdcb6e;
+    font-family: "Architects Daughter", cursive;
+    font-size: 1rem;
+    color: hsla(260, 2%, 25%, 0.7);
+    width: 70%;
+    margin-bottom: 20px;
+    resize: none; 
+}
+
+.send-button {
+    background-color: #2E3B4E;
+    color: #E1C6E0;
+    border: none;
+    border-radius: 15px;
+    padding: 0.7rem 1rem; 
+    cursor: pointer; 
+    font-family: "Architects Daughter", cursive;
+    font-size: 1rem;
+    transition: background-color 0.3s; 
+    margin-left: 3px;
+}
+
+.send-button:hover {
+    background-color: #3A4A6A;
+}
